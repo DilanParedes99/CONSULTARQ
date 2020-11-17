@@ -1,170 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
 body{
     background-color: #F2F2F2;
 }
-p{
-     font-family: 'Montserrat',sans-serif;
-    font-size: 26px;
-}
-.logo{
-    width: 250px;
-    height: 50px;
-    flex-wrap: wrap;
-}
-.portada{filter: brightness(60%);}
-
 .contendor {
     position: relative;
-    margin:10px;
-    padding: 20px;
 }
-h1{
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 45px
+
+.portada{
+    width: 100%;
+    height: auto;
+    filter: brightness(60%);
 }
-.textoportada {
-    margin: 10px;
-    padding: 20px;
+
+.contenido-portada {
+    margin: 5px;
+    padding: 10px;
     position: absolute;
-    top: 45%;
+    margin-top: 10px;
+    top: 25vw;
     left: 50%;
     color: white;
     transform: translate(-50%, -50%);
     text-align: center;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;  
 }
-.textoportada h1{
-    font-family: inherit;
-    font-size: 100px;
-    border-bottom: solid;
-    border-bottom-width: thick;
-    margin-bottom: 30px;
-}
-.textoportada h5{
-    font-size: 30px;
-}
-.portada {
-    width: 100%;
-    height:auto;
-}
+
 .logoportada{
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: auto;
 }
 
-.container-lg, .container-fluid{
-    text-align: center;    
+.logoletras{
+    width: 100%;
+    height: auto;
 }
+
+.leyenda{
+    font-size: 1.5vw;
+}
+
+.logo{
+    width: 250px;
+    height: 50px;
+}
+
 .container-fluid{
-    
+    text-align: justify;
+    bottom: 10px;
 }
-.botonimgr{
-    position:absolute;
-    top: 265%;
-    left: 50%;
-    color: black;
-    transform: translate(-50%, -100%);
-    text-align: center;
-    flex-wrap: wrap;
+
+#con-frase{
+    background-color: #f2f2f2;
 }
-.btn {
-    border-radius: 30px;
+.contpar{ /* Contenedor del parallax */
+    max-width: 100%;
+    margin:  auto;
+    background:  #2f3232;
+    font-size: 24px;
 }
-.imgrelleno{
+.parallax-window { /* lo que hay dentro del parallax */
+    min-height: 400px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background: transparent;
     filter: brightness(60%);
+}
+.image{
     width: 100%;
-    height: 90%;
+    height: auto;
+    filter: brightness(50%);
 }
-.card-img{
-    width: 100%;
-    height: 68%;
-    filter: brightness(65%);
+
+.icon-service{
+    width: 20%;
+    margin-bottom: 20px;
+    height: auto;
 }
-.cartas{
-    text-align: start;
+footer .col-sm{
+    margin: 10px;
 }
-.cartas h5{
-    color: rgba(39, 51, 98, 1);
-    font-size: 30px;
+
+.charge{
+    color: black;
+    font-size: 2.5vw;
 }
-.cartas ul{
-    font-size: 20px;
+.box-icon{
+    font-size: 40px;
 }
-.main-contacto {
-    display: grid;
-    grid-template-columns: 200px 500px 200px 500px;
+
+
+
+
+
+
+
+
+#desplegable ul {
     margin: 50px;
-    padding: 50px;
-}
-.body-c{
-    background-image: url(fondo.jpg);
-    
-}
-footer a{
-    flex-wrap: wrap;
+    padding: 5px;
 }
 
-                                    /*MEDIA QUERYS */
 
+/* color del fondo del contenedor */
 
-@media screen and (max-width: 1392px){
-    .textoportada{
-        top: 40%;    
-    }
-    .textoportada h1{
-        font-size: 80px;
-    }
-    .textoportada h5{
-        font-size: 24px;
-    }
+#desplegable div div {
 }
 
-@media screen and (max-width: 1000px){
-    .textoportada{
-        top: 30%;    
-    }
-    .textoportada h1{
-        font-size: 80px;
-    }
-    .textoportada h5{
-        font-size: 24px;
-    }
+
+/* estilo predefinido al contenedor */
+
+#desplegable div a {
+    display: block;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
 }
 
-@media screen and (max-width: 830px){
-    .textoportada{
-        transform: translate(-50%, -60%);
-    }
-    .textoportada h1{
-        font-size:60px;
-    }
-    .textoportada h5{
-        font-size: 8;
-    }
-    footer{
-        
-    }
+
+/* posicion del contenedor en la pagina */
+
+#desplegable div div {
+    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
-@media screen and (max-width: 670px){
-    .textoportada{
-        transform: translate(-50%, -70%);
-    }
-    .textoportada h1{
-        font-size:48px;
-    }
-    .textoportada h5{
-        font-size: 15px;
-    }
+
+/* efecto del contenedor al pasar el mouse por encima */
+
+#desplegable div div:hover {
+    background: #f5f5f5;
+    margin-bottom: 20%;
 }
-@media screen and (max-width: 560px){
-    .textoportada{
-        transform: translate(-50%, -85%);
-    }
-    .textoportada h1{
-        font-size:48px;
-    }
-    .textoportada h5{
-        font-size: 15px;
-    }
+
+
+/* Quitarenos la visivilidad con display:none cuando no estemos encima */
+
+#desplegable div ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+}
+
+
+/* Tamaño del contenido. AL estar al 100% el ancho se ajustara al ancho del contenedor */
+
+#desplegable div ul li {
+    float: none;
+    width: 100%;
+}
+
+
+/* Visualizaremos al pasar por encima el contenido de la lista o lo que queramos meter dentro. */
+
+#desplegable div div:hover>ul {
+    display: block;
 }
