@@ -101,6 +101,57 @@ footer .col-sm{
 
 
 
+
+
+
+#disable-nav-bar {
+    text-decoration: none;
+    cursor: default;
+    border-bottom-width: 2px;
+    border-bottom-color: #273362;
+    border-bottom-style: solid; 
+    color: #5EBFBF;
+    pointer-events: none;
+}
+
+.map-container-section {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container-section iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.jumbo-contact {
+    height: 100%;  
+    width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+
+
+
 #desplegable ul {
     margin: 50px;
     padding: 5px;
