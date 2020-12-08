@@ -5,17 +5,50 @@
 }
 
 body{
-    background-color: #F2F2F2;
+    background-color: #162b5e;
 }
 .contendor {
     position: relative;
 }
-
+footer{
+    background-color: #f6f0eb;
+}
 .portada{
     width: 100%;
     height: auto;
     filter: brightness(60%);
 }
+                                /*efecto scroll */
+
+                                .fadeTop {
+                                    opacity: 0; 
+                                    transform: translate(0, 10vh);
+                                    transition: all 1.5s;
+                                  }
+                                  
+                                  .fadeRight {
+                                    opacity: 0;
+                                    transform: translate(10vh, 0vh);
+                                    transition: all 1.5s;
+                                  }
+                                  
+                                  .fadeLeft {
+                                    opacity: 0;
+                                    transform: translate(-10vh, 0vh);
+                                    transition: all 1.5s;
+                                  }
+                                  
+                                  .fadeBottom {
+                                      opacity: 0;
+                                      transform: translate(0, -10vh);
+                                      transition: all 1.5s;
+                                  }
+
+                                  .visible {
+                                    opacity: 1;
+                                    transform: translate(0, 0);
+                                  }
+                                            /*efecto scroll */
 
 .contenido-portada {
     margin: 5px;
@@ -55,8 +88,10 @@ body{
 }
 
 #con-frase{
-    background-color: #f2f2f2;
+    background-color:#162b5e;
+    color: white;
 }
+
 .contpar{ /* Contenedor del parallax */
     max-width: 100%;
     margin:  auto;
